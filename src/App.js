@@ -23,7 +23,7 @@ function App() {
         const result = await res.json();
         setData(result);
       } catch (err) {
-        console.error("Error fetching data:", err);
+        alert("Failed to fetch data");
       } finally {
         setLoading(false);
       }
